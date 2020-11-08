@@ -1,2 +1,1 @@
-Bu tool DİCAPTİONS tarafından yazılmıştır python'ın eski sürümüyle yazıldı
-ve güncelleme gelmediği için çalışmayabilir...
+
