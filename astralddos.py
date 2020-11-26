@@ -34,7 +34,7 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 bytes = random._urandom(6000)
 
 
-host = input("Target IP addres         : ")
+host = raw_input("Target IP addres         : ")
 port = input("Target PORT number       : ")
 
 
